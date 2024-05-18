@@ -6,3 +6,8 @@ import axios from "axios"
 export async function getAllMovies() {
     return await axios.get("https://api.tvmaze.com/search/shows?q=all")
 }
+
+export async function getSearchMovies(searchTerm) {
+    // console.log('https://api.tvmaze.com/search/shows?q=All%20' + searchTerm.queryKey[1])
+    return await axios.get('https://api.tvmaze.com/search/shows?q=All%20' + searchTerm.queryKey[1])
+}
