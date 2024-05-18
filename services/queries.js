@@ -5,7 +5,6 @@ export function useGetAllMovies() {
     return useQuery({
         queryKey: ['get-all-movies'],
         queryFn: getAllMovies,
-        enabled: false
     })
 }
 
